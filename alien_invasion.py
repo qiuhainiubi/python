@@ -1,4 +1,3 @@
-#胡小小Python学习之路
 #外星人入侵小游戏
 # alien_invasion.py
 import sys

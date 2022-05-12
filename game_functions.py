@@ -1,4 +1,3 @@
-#胡小小Python学习之路
 #外星人入侵小游戏
 # game_functions.py
 # 存储让游戏运行的函数
