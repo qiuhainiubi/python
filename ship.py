@@ -19,9 +19,12 @@ class Ship(Sprite):
         self.screen_rect = screen.get_rect()
 
         #将每艘新飞船放在屏幕中央
-        self.rect.centerx = self.screen_rect.centerx
-        self.rect.bottom = self.screen_rect.bottom
+        # self.rect.centerx = self.screen_rect.centerx
+        # self.rect.bottom = self.screen_rect.bottom
 
+        # 将每艘新飞船放在屏幕中央
+        self.rect.midleft = self.screen_rect.midleft
+        self.rect.bottom = self.screen_rect.bottom
 
         #在飞船的属性centerx中存储小数值
         self.center = float(self.rect.centerx)
@@ -48,7 +51,11 @@ class Ship(Sprite):
 
     def center_ship(self):
         #让飞船在屏幕上居中
-        self.center = self.screen_rect.centerx
+        # self.center = self.screen_rect.centerx
+        #让飞船置于屏幕左侧
+        self.rect.midleft = self.screen_rect.midleft
+        self.rect.bottom = self.screen_rect.bottom
+
         #我们不需要创建多艘飞船，只需要一个飞船。
         # 在该飞船被撞到时将其居中。根据统计信息ship_left知道飞船次数是否用完。
         
